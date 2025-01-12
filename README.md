@@ -9,6 +9,6 @@ Section 2: Text Classification
 - 2.1 Text Classification with Word2Vec
 - 2.2 Text Classification with BERT
 
-- Section 3: Sentiment and Emotion
+Section 3: Sentiment and Emotion
 - 3.1 Sentiment Analysis with BERT
 - 3.2 Emotional Content of Stories
