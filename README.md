@@ -60,4 +60,20 @@ The steps followed in this analysis include:
 - **ptitprince** for raincloud plots.
 - **NumPy** and **collections.Counter** for data manipulation.
 
+---
+
 ## Section 2: Text Classification
+
+### 2.1 Text Classification with Word2Vec
+
+### 2.2 Text Classification with BERT
+
+### Key Libraries and Tools Used:
+
+## Section 3: Sentiment and Emotion
+
+### 3.1 Sentiment Analysis with BERT
+
+### Emotional Content of Stories
+
+### Key Libraries and Tools Used:
