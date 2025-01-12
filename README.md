@@ -60,6 +60,7 @@ The steps followed in this analysis include:
    - Calculating the longest dependency span for each sentence.
    - Calculating the average and maximum dependency spans for each story.
    - Visualising the results, using raincloud plots to compare the syntactic complexity across authors.
+
 ---
 
 ## Section 2: Text Classification  
@@ -98,6 +99,7 @@ The process involved:
 
 **Outcome**: 
 The fine-tuning of BERT demonstrated its strong ability to understand context, leading to a significant improvement in text classification accuracy, achieving a macro average accuracy of 0.96.
+
 ---
 
 ## Section 3: Sentiment and Emotion
