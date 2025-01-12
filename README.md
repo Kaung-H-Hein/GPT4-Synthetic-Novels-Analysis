@@ -68,18 +68,38 @@ The steps followed in this analysis include:
 This section focuses on developing a classifier to predict the `story_subject` metadata, which indicates the protagonist's profession in the story. The roles include "doctor," "local_politician," "rockstar," "scientist," and "taxi_driver."
 
 ### 2.1 Text Classification with Word2Vec  
+
+**Overview**: 
 The following steps were undertaken to build and evaluate the classifier:  
 - **Data Preprocessing**: Cleaning and preparing the text data for analysis.  
 - **Label Encoding**: Converting categorical labels into numerical format.  
 - **Tokenizing**: Using the `en_core_web_sm` English tokenizer from `spaCy`.  
-- **Feature Extraction**: Generating feature vectors for the text using Word2Vec.  
+- **Feature Extraction**: Generating feature vectors using the pre-trained `word2vec-google-news-300` model.  
 - **Model Building**: Training a logistic regression model on the feature vectors.  
-- **Model Evaluation**: Assessing the classifier's performance using a confusion matrix and a classification report.  
+- **Model Evaluation**: Assessing the classifier's performance using a confusion matrix and a classification report.
+
+**Outcome**: 
+The Word2Vec-based model achieved a macro average accuracy of 0.69, showing promising performance and demonstrating the potential of word embeddings for text classification tasks.
 
 ### 2.2 Text Classification with BERT
+This section leverages the pre-trained `bert-base-uncased model` for text classification. 
+
+**Overview**: 
+The process involved:
+- **Dataset Preparation**: Text and labels were tokenised, padded, and structured into training, validation, and test datasets using the BERT tokenizer.
+- **Model Architecture**: A custom BERT-based classifier was fine-tuned, featuring a dropout layer and a fully connected output layer for classification.
+- **Training and Optimisation**: The model was trained for 20 epochs using the AdamW optimiser and a linear learning rate scheduler.
+- **Evaluation**: Performance was assessed on validation and test sets using accuracy, precision, recall, and F1-score.
+
+**Outcome**: 
+The fine-tuning of BERT demonstrated its strong ability to understand context, leading to a significant improvement in text classification accuracy, achieving a macro average accuracy of 0.96.
 
 ### Key Libraries and Tools Used:
-
+- **Data Processing**: `pandas`, `numpy`, `spacy`, `re`, `nltk`
+- **Word Embeddings**: `gensim`, `KeyedVectors`
+- **Pre-trained Models**: `transformers`, `BertTokenizer`, `BertModel`, `AutoTokenizer`, `AutoModelForSequenceClassification`
+- **Machine Learning**: `sklearn`, `LogisticRegression`, `classification_report`, `confusion_matrix`
+- **Deep Learning**: `torch`, `torch.nn`, `DataLoader`, `Dataset`
 ---
 
 ## Section 3: Sentiment and Emotion
