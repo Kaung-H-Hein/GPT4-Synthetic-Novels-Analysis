@@ -31,7 +31,7 @@ The steps followed in this analysis include:
    - Collecting story data and concatenating the text contents into a single corpus.
    - Applying the `en_core_web_sm` English tokenizer, tagger, and parser from `spaCy`.
    - Using regular expressions to remove punctuation.
-   - Processing the text with the `spaCy` NLP pipeline, extracting tokens and excluding whitespace.
+   - Processing the text with the `spaCy` NLP pipeline, extracting tokens.
 2. **Analysis**:
    - Calculating token frequencies and rankings.
    - Visualising the frequency distribution.
